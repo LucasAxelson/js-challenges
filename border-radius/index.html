@@ -13,23 +13,21 @@
 </head>
 <body>
     <main>
-        <div class="headbar">
-            <div class="headbar__inputs input--1">
-                <label class="box__labels" for="box--tLeft">U-Left:</label>
-                <input type="text" class="box__inputs" id="box--tLeft">
+        <div class="headbar">     
+            <div class="border__elements">
+                <label class="label__radius" for="borderRadiusInput">Desired Border-radius:</label>
+                <input type="text" class="border__inputs input__radius" id="borderRadiusInput">
+
+                <label for="measurements-select" style="display:none">Choose a measurement:</label>
+                <select class="border__inputs select__radius" name="measurements" id="measurements-select">
+                    <option value="percent">%</option>
+                    <option value="pixel">px</option>
+                    <option value="rem">rem</option>
+                </select>
+
+                <button class="border__inputs btn__radius">Submit!</button>
             </div>
-            <div class="headbar__inputs input--2">
-                <label class="box__labels" for="box--tRight">U-Right:</label>
-                <input type="text" class="box__inputs" id="box--tRight">
-            </div>
-            <div class="headbar__inputs input--3">
-                <label class="box__labels" for="box--bLeft">L-Left:</label>
-                <input type="text" class="box__inputs" id="box--bLeft">
-            </div>
-            <div class="headbar__inputs input--4">
-                <label class="box__labels" for="box--bRight">L-Right:</label>
-                <input type="text" class="box__inputs" id="box--bRight">
-            </div>
+
         </div>
 
         <div class="container">

@@ -2,7 +2,7 @@
 
 :root {
   --black--1: rgb(35, 36, 37);
-  --white--1: rgb(227, 238, 240);
+  --white--1: rgb(234, 240, 241);
   --grey--1: rgb(129, 129, 129);
 }
 
@@ -21,25 +21,6 @@ body {
   background-color: var(--white--1);
 }
 
-/* Head ================= */
-
-.headbar {
-  background-color: var(--black--1);
-
-  margin: 0;
-  padding: 0 2rem;
-  height: 10rem;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.headbar__inputs {
-  padding: 0 2.5rem;
-}
-
 /* Body ================= */
 
 .container {
@@ -55,28 +36,40 @@ body {
   width: 40vh;
   height: 40vh;
 
-  border-radius: 2.5%;
+  border-radius: 25rem;
 
   border: 10px solid var(--black--1);
   box-shadow: 0 0 0 2px var(--grey--1), 0 0 0 4px var(--black--1);
 }
 
-.box__labels {
-  margin-right: 1.5rem;
+/* Head ================= */
 
-  align-self: flex-start;
-  text-align: center;
+.headbar {
+  background-color: var(--black--1);
 
-  color: var(--white--1);
-  font-size: 3.5rem;
+  margin: 0;
+  padding: 0 2rem;
+  height: 10rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.box__inputs {
-  height: 4rem;
-  width: 20rem;
-  padding-left: 0.5rem;
+.border__elements {
+  color: var(--white--1);
+  font-size: 6rem;
+}
 
-  font-size: 4rem;
+.border__inputs {
+  height: 6rem;
+  padding: 0.5rem 2rem;
 
-  border: 3px solid var(--grey--1);
+  border-radius: 5%;
+}
+
+.btn__radius {
+  color: var(--black--1);
+  background-color: var(--white--1);
 }
